@@ -1,3 +1,5 @@
+
+
 /*GENERALES*/
 
 *{
@@ -288,4 +290,19 @@ button, .button{
     color: white;
     background: #222222;
     border-top: 5px solid #01B1EA;
+}
+
+/*Alertas y errores*/
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    max-width: 250px;
+}
+
+.alerta-error{
+    background: red;
 }

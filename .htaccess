@@ -1,0 +1,19 @@
+<ifModule mod_rewrite.c>
+
+# Activer rewrite
+
+RewriteEngine on
+
+# Paginas o mensajes de error personalizados
+ErrorDocument 404 http://localhot/master-php/proyecto-php-poo/error/
+
+# las url no se pueden acceder si estas son de directorio o ficheros
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+# Esto nos permite editar la direccion url 
+# cambia el formato de la url por ejemplo:
+# index.php?controller=usuario&action=registro -> index.php/usuario/registro
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+
+</ifModule>
