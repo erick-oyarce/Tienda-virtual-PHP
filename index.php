@@ -57,6 +57,7 @@ if(class_exists($nombre_controlador)){
     show_error();
 }
 
+//vista de archivo html
 require_once 'views/layout/footer.php';
 
 
